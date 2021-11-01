@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap');
+
+html,body{
+    margin: 0;
+    padding: 0;
+}
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #000;
+    color: #d4d4d4;
+    font-size: 20px;
+    font-family: 'Cairo', sans-serif;
+    font-weight: 400;
+}
+
+a:focus{
+    outline: 3px solid rgb(83, 162, 253);
+    outline-offset: 3px;
+    
+}
+.container{
+    position: relative;
+    max-width: 90%;
+    margin: 50px auto;
+    outline: rgb(41, 40, 40, .3) solid 1px;
+    border-radius: 15px;
+}
+
+.main-header{
+    font-size: 24px;
+    margin-bottom: 180px;
+    padding: 2em;
+}
+.main-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: .5em;
+    color: white;
+    margin-bottom: 100px;
+}
+.burger-button{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(83, 162, 253, .7);
+    border: none;
+    padding: .5em;
+    cursor: pointer;
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    z-index: 1000;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.button-line{
+    display: block;
+    position: relative;
+}
+.button-line, 
+.button-line::before,
+.button-line::after{
+    height: 2px;
+    width: 20px;
+    background-color: black;
+    transition: transform 250ms ease-in-out;
+}
+
+.button-line::before,.button-line::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.button-line::before{top: 5px;}
+.button-line::after{bottom: 5px;}
+.menu-bar{
+    position: absolute;
+    top: 0;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color:rgb(101, 168, 245);
+    transform: translateY(-150%);
+    transition: transform 350ms cubic-bezier(.5, 0, .5, 1);
+    font-size: 24px;
+    border-radius: 15px;
+    font-weight: 600;
+}
+.nav-list{
+    padding: 0;
+    margin: 3.5em 0 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50%;
+    align-items: center;
+    list-style: none;
+}
+.nav-list>li>a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+.nav-open .menu-bar{
+    transform: translateX(0);
+}
+.nav-open .nav-links:hover{
+    font-size: 32px;
+    color: rgb(83, 162, 253); 
+}
+.nav-links:focus{
+    outline: 3px solid #d4d4d4;;
+    outline-offset: 3px;
+}
+.nav-open .button-line{
+    transform: rotate(.625turn);
+}
+.nav-open .button-line::before{
+    transform: rotate(90deg) translateX(-5px);
+}
+.nav-open .button-line::after{
+    opacity: 0;
+}
+.nav-open .burger-button{
+    background: inherit;
+}
+.my-name{
+    max-width: 650px;
+}
+
+.mockup-header{
+    display: flex;
+    flex-direction: column;
+
+}
+.about-me-section{
+    background-color: rgb(5, 5, 5, .9);
+    background-image: url(assets/download.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    padding-top: 1em;
+    border-radius: 5px;
+    margin: 2em 0 100px;
+    display: flex;
+    flex-direction: column;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+}
+.card-info p{
+    margin-bottom: 80px;
+}
+.about-me-heading,.portfolio h3{
+    font-size: 24px;    
+    border-radius: 5%;
+    text-align: center;
+    align-self: center;
+    background-color: rgb(83, 162, 253);
+    color: #d4d4d4;
+    padding: .5em;
+    width: 180px;
+    font-weight: 700;
+}
+.about-me-heading::after, .portfolio h3::after{
+    content: '';
+    display: block;
+    width: 3em;
+    height: 1px;
+    margin: .2em auto;
+    background: #fff;
+    opacity: .5;
+}
+.info-abtme{
+    display: block;
+    margin: 0 auto;
+    width: 80%;
+    text-align: left;
+}
+#about-me{
+    padding: .5em 2em;
+}
+#My-skills>ul{
+    list-style-type: square;
+    list-style-position: inside;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 ;
+    margin: 0;
+}
+#My-skills>ul>li{
+    font-size: 16px;
+    width: 200px;
+    background-color: rgb(83, 162, 253);
+    margin: .5em;
+    padding: 1em .4em;
+    text-align: center;
+    border-top-right-radius: 20%;
+    border-bottom-left-radius: 20%;
+}
+
+.contact-me{
+    padding: 20px 2em;
+    height: 250px;
+    font-weight: 300;
+}
+.contacts{
+    display: flex;
+    justify-content: space-between;
+}
+.conatct-mail>a{
+    text-decoration: none;
+    color: #d4d4d4;
+}
+.socials{
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+.socials>li{
+    display: inline-block;
+    margin: 1em;
+}
+.socials>li>a{
+    text-decoration: none;
+}
+.portfolio{
+    display: flex;
+    flex-direction: column;
+}
+
+.portfolio-list{
+    height: 40%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 1fr));
+    column-gap:5px;
+    row-gap: 2px;
+    margin: 100px 1em;
+    padding: 0;
+}
+.portfolio-item{
+    background: rgb(6, 11, 17);
+    overflow: hidden;
+}
+.portfolio-img{
+    width: 100%;
+    height: 100%;
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1), opacity 250ms linear;
+}
+.portfolio-img:hover,
+.portfolio-item:focus .portfolio-img
+{
+    transform: scale(1.2);
+    opacity: .75;
+}
+.portfolio-item:focus{
+    position: relative;
+    z-index: 2;
+}
+.circle-1{
+    width: 45vw;
+    height: 45vw;
+    top: 0;
+    left: 0;
+    position: absolute;
+    overflow: hidden;
+    transition: transform 1000ms ease-in-out;
+}
+.circle-1::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: rgba(83, 253, 154, .07);
+    transform: translate(-50%, -50%);
+}
+.circle-2{
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    bottom: 10px;
+    right: 45px;
+    position: absolute;
+    background-color: rgb(83, 162, 253, .07);
+    transition: transform 800ms ease-in-out;
+}
+.fa-phone{
+    font-size: 1em;
+}
+.fab{
+    color: rgb(83, 162, 253);
+    font-size: 1.5em;
+}
+.fab:hover, .fab:focus{
+    transform: scale(1.1);
+}
+
+@media(max-width: 600px){
+    .circle-2{
+        width: 200px;
+        height: 200px;
+        bottom: 35px;
+        right: 25px;
+        position: absolute;
+    }
+    .circle-1::before{
+        transform: translate(-30%, -30%);
+    }
+    #about-me{
+        padding: 0 .5em;
+        margin: 0;
+    }
+    #My-skills{
+        padding: .5em;
+    }
+    .cards{
+        padding: 0;
+    }
+    .info-abtme{
+        width: 100%;
+        padding: 0 .5em;
+        text-align: center;
+    }
+    .contacts{
+        display: flex;
+        font-size: 16px;
+        flex-wrap: wrap;
+    }
+    .contact-me{
+        padding: .75em;
+    }
+    .socials>li{
+        margin: .75em .35em;
+    }
+    
+}
+@media(max-width: 400px){
+    .circle-2{
+        width: 150px;
+        height: 150px;
+        bottom: 10px;
+        right: 15px;
+    }
+    .contacts{
+        justify-content: flex-start;
+    }
+    .fab{
+        font-size: 1em;
+    }
+}
