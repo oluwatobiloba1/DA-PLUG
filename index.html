@@ -13,104 +13,86 @@
     <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
+    <div class="animatentry"></div>
+<nav id="navbar">
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#projects">Work</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
-    <div class="circle-1"></div>
-    <div class="circle-2"></div>
-    <div class="container">
-        <header class="main-header">
-            <nav class="main-nav">
-                <div class="logo">DA: PLUG</div>
-                <div class="drop-menu">
-                    <button class="burger-button">
-                        <span class="button-line"></span>
-                    </button>
-                    <div class="menu-bar">
-                        <ul class="nav-list">
-                            <li ><a class="nav-links" href="#about-me-section">About Me</a></li>
-                            <li ><a class="nav-links" href="#portfolio">My work</a></li>
-                            <li ><a class="nav-links" href="#contact-me">Contact</a></li>
-                            <li ><a class="nav-links" href="assets/Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
-                            
-                            
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <div class="mockup-header">
-                <div class="my-name">
-                    <p>Hello World, I'm <span class="name">Tobi</span></p><br>
-                    <p>I am a frontend minded developer with interest in backend development and machine learning,<br>I'm based in lagos, Nigeria.</p>
-    
-                </div>
-            </div>
-        </header>
-        <section class="main-section">
-            <div class="about-me-section" id="about-me-section">
-                <h3 class="about-me-heading">About Me</h3>
-                <div class="cards">
-                    <div class="card-info" id="about-me">
-                        <p>Ok!, real brief...</p><br>
-                        <p class="info-abtme">I am a self taught frontend developer with a wealth of learning experience in building front-end web applications. 
-                            I am currently studying Mathematics with Computer Science(in my final year), at the University of Lagos, Nigeria.
-                             <br>
-                             <br>
-                            I am a tech enthusiast, I seek to solve problems using programming languages. I love to learn new tools and stuff.
-                             <br>
-                            I am coming to love and embrace the challenges of coding.
-                            At this moment I live to code.
-                             <br>
-                             I am a big fan of sports and art, I do enjoy seeing movies, I am a little bit into reading.
-                            </p>
-                    </div>
-                    <div class="card-info" id= "My-skills">
-                        <h3>My Skills:</h3>
-                        <ul>
-                            <li class="skill">HTML/CSS/JavaScript</li>
-                            <li class="skill">React Js</li>
-                            <li class="skill">Node.Js</li>
-                            <li class="skill">Redux</li>
-                            <li class="skill">Git</li>
-                            
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="portfolio" id="portfolio">
-                <h3>PORTFOLIO</h3>
-                <div class="portfolio-list">
-                    <a class="portfolio-item" href="https://oluwatobiloba1.github.io/social-media/">
-                        <img class="portfolio-img" src="assets/Screenshot (24).png">
-                    </a>
-                    <a class="portfolio-item" href="https://oluwatobiloba1.github.io/manage-landing-page-master/">
-                        <img class="portfolio-img" src="assets/Screenshot (25).png">
-                    </a>
-                    <a class="portfolio-item" href="https://oluwatobiloba1.github.io/fylo/">
-                        <img class="portfolio-img" src="assets/Screenshot (53).png">
-                    </a>
-                    <a class="portfolio-item" href="https://oluwatobiloba1.github.io/hudle/">
-                        <img class="portfolio-img" src="assets/Screenshot (54).png">
-                    </a>
-                    <a class="portfolio-item" href="https://oluwatobiloba1.github.io/static-job-listing/">
-                        <img class="portfolio-img" src="assets/Screenshot (68).png">
-                    </a>
-                </div>
-            </div>
-            <footer class="contact-me" id="contact-me">
-                <p>_Feel free, Contact me.</p>
-                <div class="contacts">
-                    <p class="conatct-mail"><i class="far fa-envelope"></i>  oluwatobiofficial15@gmail.com</p>
-                    <p class="contact-number"><i class="fas fa-phone"></i>  +234 8182218903</p>
-                </div>
-                <ul class="socials">
-                    <li class="social-links"><a href="https://www.facebook.com/oluwatobilobabamisebi"><i class="fab fa-facebook-square"></i></a></li>
-                    <li class="social-links"><a href="https://www.linkedin.com/in/oluwatobilobabamisebi"><i class="fab fa-linkedin"></i></a></li>
-                    
-                    <li class="social-links"><a href="https://github.com/oluwatobiloba1"><i class="fab fa-github-square"></i></a></li>
-                </ul>
-            </footer>
-        </section>
-    </div>
+<section id="welcome-section"><h1>&#60; HELLO WORLD! /&#62;</h1><h2>I am TOBI, <br><br> a web developer<span class="span"></span></h2></section>
 
-    <script src="script.js"></script>
+<section id="about" class="conatiner">
+  <p>I am a self taught frontend developer with a wealth of learning experience in building front-end web applications.I am currently studying Mathematics with Computer Science(in my final year), at the University of Lagos, Nigeria.</p>
+  <p>I am a tech enthusiast, I seek to solve problems using programming languages. I love to learn new tools and stuff.</p>
+  <div class="skills">
+    <h2>My skills:</h2>
+    <ul>
+      <li> <i class="fa-solid fa-file-code"></i>HTML/CSS/JavaScript</li>
+      <li>React Js</li>
+      <li>Node.Js</li>
+      <li>Redux</li>
+      <li>Git</li>
+    </ul>
+  </div>
+</section>
+
+<section id="projects" class="conatiner">
+  <h2>P O R T F O L I O</h2>
+  <div class="project">
+    <div class="project-tile">
+    <a href="https://oluwatobiloba1.github.io/social-media/">
+      <figure>
+        <img src="assets/Screenshot (24).png">
+        <br>
+        <figcaption>Social media dashboard</figcaption>
+      </figure>    
+    </a>
+  </div>
+  <div class="project-tile">
+    <a href="https://oluwatobiloba1.github.io/manage-landing-page-master/">
+      <figure>
+        <img src="assets/Screenshot (25).png">
+        <br>
+        <figcaption>A simple Landing Page</figcaption>
+      </figure>    
+    </a>
+  </div>
+  <div class="project-tile">
+    <a href="https://oluwatobiloba1.github.io/fylo/">
+      <figure>
+        <img src="assets/Screenshot (53).png">
+        <br>
+        <figcaption>A basic web design</figcaption>
+      </figure>    
+    </a>
+  </div>
+  <div class="project-tile">
+    <a href="https://oluwatobiloba1.github.io/hudle/">
+      <figure>
+        <img src="assets/Screenshot (54).png">
+        <br>
+        <figcaption>"Huddle" landing page</figcaption>
+      </figure>    
+    </a>
+  </div>
+  </div>
+</section>
+<footer id="contact" class="conatiner">
+  <p><h2>_Feel free, Contact me.</h2></p>
+  <div class="personal">
+    <p><i class="far fa-envelope"></i> oluwatobiofficial15@gmail.com</p>
+    <p><i class="fas fa-phone"></i> +234 8182218903</p>
+  </div>
+  <div class="social-links">
+    <ul>
+      <li><a id="profile-link" class="social-link" href="https://github.com/oluwatobiloba1" target= "_blank"><i class="fab fa-github-square"></i> Github</a></li>
+      <li><a class="social-link" href="https://www.facebook.com/oluwatobilobabamisebi"><i class="fab fa-facebook-square"></i> Facebook</a></li>
+      <li><a class="social-link" href="https://www.linkedin.com/in/oluwatobiloba-bamisebi-7a7766171"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
 </body>
 </html>
